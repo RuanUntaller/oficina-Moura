@@ -5,9 +5,9 @@ Copie este arquivo para docs/DIARIO.md no repositório oficina-servidor. Preench
 
 Dia	Data	Tarefas concluídas (nº do PLANO)	% antes	% depois	Pedidos	O que a IA errou hoje e como eu percebi
 1	17      Planejamento aprovado (PLANO.md)       0       0           0    (dia sem Copilot)
-2						                                               2
-3						
-4						
+2   18      Continuação da primeira aula — 2 pedidos-      -           2    
+3	18		Segunda aula		                   -       -           0
+4	19		Continuação da segunda aula			   -      2.5	       2   A IA considerou informações desatualizadas sobre a estrutura do backend. Percebi o erro ao conferir o conteúdo do index.js pelo terminal e comparar com as orientações anteriores.
 5						
 6						
 7						
@@ -23,3 +23,7 @@ Qual foi o erro mais sério da IA, e como eu o encontrei?
 O que eu faria diferente se começasse hoje?
 
 O que ficou fora, e o que eu faria em seguida?
+
+
+
+
