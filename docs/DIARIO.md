@@ -1,11 +1,11 @@
 DIÁRIO — Oficina Mecânica
-Aluno:  Sistema: Windows / Linux A cota do Copilot renova em: /
+Aluno:  Sistema: Windows / Linux A cota do Copilot renova em: 30/11
 
 Copie este arquivo para docs/DIARIO.md no repositório oficina-servidor. Preencha uma linha no fim de cada dia e faça commit. Leva 5 minutos. "% antes" e "% depois" vêm do painel do Copilot no VS Code. "Pedidos" é quantas mensagens você enviou ao Copilot no dia. O teto é 8 por dia.
 
 Dia	Data	Tarefas concluídas (nº do PLANO)	% antes	% depois	Pedidos	O que a IA errou hoje e como eu percebi
 1	17      Planejamento aprovado (PLANO.md)       0       0           0    (dia sem Copilot)
-2						
+2						                                               2
 3						
 4						
 5						
