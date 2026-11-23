@@ -134,8 +134,8 @@ Status possíveis: pendente, em andamento, concluída, cortada.
 
 # Tarefa	                                                          Projeto                Branch                 Dia previsto   Status
  
-Criar esqueleto do projeto e realizar deploy inicial no servidor      oficina-servidor/web   setup/deploy-inicial      Dia 2       pendente
-Backend: Criar rotas CRUD de Veículos                                 oficina-servidor       feat/veiculos-backend     Dia 2       pendente
+Criar esqueleto do projeto e realizar deploy inicial no servidor      oficina-servidor/web   setup/deploy-inicial      Dia 2       concluído
+Backend: Criar rotas CRUD de Veículos                                 oficina-servidor       feat/veiculos-backend     Dia 2       concluído
 Frontend: Criar tela e integração CRUD de Veículos                    oficina-web            feat/veiculos-frontend    Dia 3       pendente
 Backend: Criar rotas CRUD de Serviços + Regra de exclusão de veículo  oficina-servidor       feat/servicos-backend     Dia 4       pendente
 Frontend: Criar tela de Serviços com filtro de status e histórico     oficina-web            feat/servicos-frontend    Dia 5       pendente
