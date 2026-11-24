@@ -189,3 +189,28 @@ Implementar as seguintes rotas:
 A implementação deve seguir o `docs/PLANO.md`, manter a compatibilidade com o CRUD de veículos e tratar corretamente os erros e os códigos HTTP definidos.
 
 Antes de finalizar, apresentar o diff completo para revisão. Não fazer commit e não alterar outros arquivos sem necessidade.
+
+## Data: 24/11/2026 | Tarefa 5: Frontend de Ordens de Serviço
+
+### Contexto
+O projeto Oficina Moura possui frontend em React/Vite e backend publicado em https://oficina-servidor.onrender.com. O CRUD de ordens de serviço já estava implementado no backend.
+
+### Tarefa
+Implementar a interface de gerenciamento de ordens de serviço, permitindo cadastrar, listar, filtrar por status, atualizar o status e consultar o histórico de serviços de um veículo.
+
+### Restrições
+- Seguir a estrutura e os padrões existentes no frontend.
+- Não alterar o backend.
+- Não instalar bibliotecas desnecessárias.
+- Utilizar os campos e rotas definidos pela API.
+- Tratar erros retornados pelo backend.
+- Não alterar arquivos fora do necessário.
+
+### Pronto quando
+- O cadastro e a listagem de ordens de serviço estiverem funcionando.
+- O filtro por status funcionar.
+- For possível atualizar o status e consultar o histórico.
+- Os dados estiverem integrados à API.
+- A validação impedir o envio de campos obrigatórios ausentes.
+- Lint, build e revisão do diff forem concluídos.
+- O código for revisado, aceito e publicado na branch main do GitHub.
