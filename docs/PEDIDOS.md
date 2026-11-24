@@ -132,3 +132,60 @@ Revise o src/index.css. Você adicionou novas regras globais ao final do arquiv
 Organize o arquivo para evitar duplicações, mantendo as configurações necessárias para a nova interface. Preserve o visual atual, a responsividade e as demais funcionalidades. Não altere outros arquivos.
 
 Depois, mostre o diff para revisão. Não faça commit.
+
+
+# Pedido ao Copilot — Tarefa 4: CRUD de Ordens de Serviço (Backend) 24/11
+
+# 1. Contexto
+
+O projeto Oficina Moura possui um backend desenvolvido com Node.js, Express e MongoDB Atlas. O CRUD de veículos já está implementado e funcionando. O projeto utiliza Mongoose para modelagem e comunicação com o banco de dados.
+
+Estou trabalhando na branch `feat/servicos-backend`. Consulte o arquivo `docs/PLANO.md` para seguir a estrutura e os requisitos definidos para a entidade de serviços.
+
+### 2. Tarefa
+
+Implementar o CRUD de ordens de serviço no backend, permitindo:
+
+- Cadastrar novas ordens de serviço.
+- Listar todas as ordens de serviço.
+- Atualizar informações das ordens existentes.
+- Excluir ordens de serviço.
+- Consultar o histórico de serviços de um veículo específico.
+
+### 3. Regras e Restrições
+
+- Seguir os padrões já utilizados no arquivo `index.js`.
+- Criar a modelagem da entidade de serviços utilizando Mongoose.
+- Utilizar os seguintes campos:
+  - `veiculo_id`: obrigatório, armazenado como texto (String), contendo o `_id` do veículo associado.
+  - `descricao_problema`: obrigatório.
+  - `status`: obrigatório, aceitando os valores `aberto`, `aguardando_peca` e `finalizado`.
+  - `data_entrada`: obrigatório, armazenado como texto (String) no formato `AAAA-MM-DD`.
+  - `servico_realizado`: opcional.
+- Verificar se o veículo informado existe antes de cadastrar uma ordem de serviço.
+- Permitir filtro opcional por status na rota de listagem.
+- Na listagem, retornar também a placa e o modelo do veículo associado.
+- Validar os dados recebidos e utilizar os seguintes códigos HTTP:
+  - `200`: consulta, atualização ou exclusão realizada com sucesso.
+  - `201`: ordem de serviço cadastrada com sucesso.
+  - `400`: campo obrigatório ausente ou dado inválido. No cadastro, também deve ser retornado quando o veículo informado não existir.
+  - `404`: ordem de serviço não encontrada ou veículo não encontrado na consulta de histórico.
+  - `500`: erro interno inesperado no servidor.
+- Manter as funcionalidades existentes de veículos sem alterações.
+- Não implementar nesta etapa a regra de impedir a exclusão de veículos com ordens de serviço em aberto, pois ela será desenvolvida posteriormente.
+
+### 4. Resultado Esperado
+
+Implementar as seguintes rotas:
+
+| Método | Rota | Finalidade |
+|---|---|---|
+| GET | `/servicos` | Listar todas as ordens de serviço, com filtro opcional por status |
+| POST | `/servicos` | Cadastrar uma nova ordem de serviço |
+| PUT | `/servicos/:id` | Atualizar uma ordem de serviço existente |
+| DELETE | `/servicos/:id` | Excluir uma ordem de serviço |
+| GET | `/veiculos/:id/servicos` | Consultar o histórico de serviços de um veículo |
+
+A implementação deve seguir o `docs/PLANO.md`, manter a compatibilidade com o CRUD de veículos e tratar corretamente os erros e os códigos HTTP definidos.
+
+Antes de finalizar, apresentar o diff completo para revisão. Não fazer commit e não alterar outros arquivos sem necessidade.

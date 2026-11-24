@@ -10,7 +10,7 @@ Dia	Data	Tarefas concluídas (nº do PLANO)	% antes	% depois	Pedidos	O que a IA 
 4	19		Continuação da segunda aula			   -      2.5	       2   A IA considerou informações desatualizadas sobre a estrutura do backend. Percebi o erro ao conferir o conteúdo do index.js pelo terminal e comparar com as orientações anteriores.
 5	23	    (CRUD)	                              2.5	  4.1	       2   O Copilot implementou uma verificação de serviços em aberto na exclusão de veículos, embora a entidade de serviços ainda não tivesse sido implementada. Percebi ao revisar o código e comparar com o escopo da etapa.
 6	24	    tarefa 3—CRUD de veículos no frontend 4.1     6.7          2   O Copilot adicionou regras CSS duplicadas no src/index.css, percebi ao revisar o diff e pedi a reorganização.
-7						
+7						                          6.7                  1
 8						
 9						
 10						

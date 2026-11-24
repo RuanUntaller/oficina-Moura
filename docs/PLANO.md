@@ -137,11 +137,13 @@ Status possíveis: pendente, em andamento, concluída, cortada.
 Criar esqueleto do projeto e realizar deploy inicial no servidor      oficina-servidor/web   setup/deploy-inicial      Dia 2       concluído
 Backend: Criar rotas CRUD de Veículos                                 oficina-servidor       feature/cadastro-veiculos-backend     Dia 2       concluído
 Frontend: Criar tela e integração CRUD de Veículos                    oficina-web            feat/veiculos-frontend    Dia 3       concluído
-Backend: Criar rotas CRUD de Serviços + Regra de exclusão de veículo  oficina-servidor       feat/servicos-backend     Dia 4       pendente
-Frontend: Criar tela de Serviços com filtro de status e histórico     oficina-web            feat/servicos-frontend    Dia 5       pendente
-Testes integrados, validação de regras e ajustes finos no layout      oficina-servidor/web   fix/ajustes-finais        Dia 6       pendente
-Auditoria final do plano, diário e revisão para a entrega             docs                   main                      Dia 7       pendente
+Backend: Criar rotas CRUD de Serviços                                 oficina-servidor       feat/servicos-backend     Dia 4      concluído
+Backend: Impedir exclusão de veículo com ordem de serviço em aberto   oficina-servidor       feat/servicos-backend     Dia 4      pendente
+Frontend: Criar tela de Serviços com filtro de status e histórico     oficina-web            feat/servicos-frontend    Dia 5      pendente
+Testes integrados, validação de regras e ajustes finos no layout      oficina-servidor/web   fix/ajustes-finais        Dia 6      pendente
+Auditoria final do plano, diário e revisão para a entrega             docs                   main                      Dia 7      pendente
 
 11. Mudanças no plano
 Data	O que mudou	Por quê
 24/11/2026  Frontend: CRUD de veículos concluído e publicado. A implementação, os testes e a validação no site público foram finalizados.
+24/11/2026  Tarefa 4 dividida em duas etapas: CRUD de serviços concluído e regra de exclusão de veículo pendente. | Separar as entregas conforme orientação.
