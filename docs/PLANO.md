@@ -140,11 +140,9 @@ Frontend: Criar tela e integração CRUD de Veículos                   oficina-
 Backend: Criar rotas CRUD de Serviços                                oficina-servidor      feat/servicos-backend       Dia 4      concluído
 Backend: Impedir exclusão de veículo com ordem de serviço em aberto  oficina-servidor      feat/regra-exclusao-veiculo Dia 4      concluído
 Frontend: Criar tela de Serviços com filtro de status e histórico    oficina-web           feat/servicos-frontend      Dia 5      concluído
-Testes integrados, validação de regras e ajustes finos no layout     oficina-servidor/web  fix/ajustes-finais          Dia 6      pendente
+Testes integrados, validação de regras e ajustes finos no layout     oficina-servidor/web  fix/ajustes-finais          Dia 6      concluído
 Auditoria final do plano, diário e revisão para a entrega            docs                  main                        Dia 7      pendente
 
 11. Mudanças no plano
 Data	O que mudou	Por quê
-24/11/2026  Frontend: CRUD de veículos concluído e publicado. A implementação, os testes e a validação no site público foram finalizados.
 24/11/2026  Tarefa 4 dividida em duas etapas: CRUD de serviços concluído e regra de exclusão de veículo pendente. | Separar as entregas conforme orientação.
-24/11/2026  Frontend de Serviços concluído e publicado no GitHub. Implementação testada, aceita pelo tutor e publicada na main.
