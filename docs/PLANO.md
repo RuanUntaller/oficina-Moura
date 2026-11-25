@@ -141,7 +141,7 @@ Backend: Criar rotas CRUD de Serviços                                oficina-se
 Backend: Impedir exclusão de veículo com ordem de serviço em aberto  oficina-servidor      feat/regra-exclusao-veiculo Dia 4      concluído
 Frontend: Criar tela de Serviços com filtro de status e histórico    oficina-web           feat/servicos-frontend      Dia 5      concluído
 Testes integrados, validação de regras e ajustes finos no layout     oficina-servidor/web  fix/ajustes-finais          Dia 6      concluído
-Auditoria final do plano, diário e revisão para a entrega            docs                  main                        Dia 7      pendente
+Auditoria final do plano, diário e revisão para a entrega            docs                  main                        Dia 7      concluído
 
 11. Mudanças no plano
 Data	O que mudou	Por quê
