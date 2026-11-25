@@ -11,7 +11,7 @@ Dia	Data	Tarefas concluídas (nº do PLANO)	% antes	% depois	Pedidos	O que a IA 
 5	23	    (CRUD)	                              2.5	  4.1	       2   O Copilot implementou uma verificação de serviços em aberto na exclusão de veículos, embora a entidade de serviços ainda não tivesse sido implementada. Percebi ao revisar o código e comparar com o escopo da etapa.
 6	24	   tarefa 3—CRUD de veículos no frontend 4.1     6.7           2   O Copilot adicionou regras CSS duplicadas no src/index.css, percebi ao revisar o diff e pedi a reorganização.
 7	24     Frontend: Ordens de Serviço           6.7     14.4          3   Nenhum erro identificado
-8						
+8	25                                          14.4					
 9						
 10						
 Total						

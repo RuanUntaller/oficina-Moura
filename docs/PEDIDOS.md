@@ -142,7 +142,7 @@ O projeto Oficina Moura possui um backend desenvolvido com Node.js, Express e Mo
 
 Estou trabalhando na branch `feat/servicos-backend`. Consulte o arquivo `docs/PLANO.md` para seguir a estrutura e os requisitos definidos para a entidade de serviços.
 
-### 2. Tarefa
+# 2. Tarefa
 
 Implementar o CRUD de ordens de serviço no backend, permitindo:
 
@@ -152,7 +152,7 @@ Implementar o CRUD de ordens de serviço no backend, permitindo:
 - Excluir ordens de serviço.
 - Consultar o histórico de serviços de um veículo específico.
 
-### 3. Regras e Restrições
+# 3. Regras e Restrições
 
 - Seguir os padrões já utilizados no arquivo `index.js`.
 - Criar a modelagem da entidade de serviços utilizando Mongoose.
@@ -174,7 +174,7 @@ Implementar o CRUD de ordens de serviço no backend, permitindo:
 - Manter as funcionalidades existentes de veículos sem alterações.
 - Não implementar nesta etapa a regra de impedir a exclusão de veículos com ordens de serviço em aberto, pois ela será desenvolvida posteriormente.
 
-### 4. Resultado Esperado
+# 4. Resultado Esperado
 
 Implementar as seguintes rotas:
 
@@ -190,15 +190,15 @@ A implementação deve seguir o `docs/PLANO.md`, manter a compatibilidade com o 
 
 Antes de finalizar, apresentar o diff completo para revisão. Não fazer commit e não alterar outros arquivos sem necessidade.
 
-## Data: 24/11/2026 | Tarefa 5: Frontend de Ordens de Serviço
+# Data: 24/11/2026 | Tarefa 5: Frontend de Ordens de Serviço
 
-### Contexto
+# Contexto
 O projeto Oficina Moura possui frontend em React/Vite e backend publicado em https://oficina-servidor.onrender.com. O CRUD de ordens de serviço já estava implementado no backend.
 
-### Tarefa
+# Tarefa
 Implementar a interface de gerenciamento de ordens de serviço, permitindo cadastrar, listar, filtrar por status, atualizar o status e consultar o histórico de serviços de um veículo.
 
-### Restrições
+# Restrições
 - Seguir a estrutura e os padrões existentes no frontend.
 - Não alterar o backend.
 - Não instalar bibliotecas desnecessárias.
@@ -206,7 +206,7 @@ Implementar a interface de gerenciamento de ordens de serviço, permitindo cadas
 - Tratar erros retornados pelo backend.
 - Não alterar arquivos fora do necessário.
 
-### Pronto quando
+# Pronto quando
 - O cadastro e a listagem de ordens de serviço estiverem funcionando.
 - O filtro por status funcionar.
 - For possível atualizar o status e consultar o histórico.
@@ -214,3 +214,28 @@ Implementar a interface de gerenciamento de ordens de serviço, permitindo cadas
 - A validação impedir o envio de campos obrigatórios ausentes.
 - Lint, build e revisão do diff forem concluídos.
 - O código for revisado, aceito e publicado na branch main do GitHub.
+
+
+
+# Data: 25/11/2026  Tarefa: Regra de exclusão de veículos
+
+
+# Contexto
+Estamos no repositório `oficina-servidor`, na branch `feat/regra-exclusao-veiculo`. O backend utiliza Node.js, Express e MongoDB. A rota `DELETE /veiculos/:id` já existe e realiza a exclusão de veículos.
+
+# Tarefa
+Implementar uma regra de negócio na rota `DELETE /veiculos/:id` para impedir a exclusão de um veículo que possua ordens de serviço em aberto.
+
+# Regras e restrições
+- A verificação deve acontecer no backend.
+- Comparar o `_id` do veículo com o campo `veiculo_id` da ordem de serviço, que está armazenado como texto.
+- Considerar os status `aberto` e `aguardando_peca` como ordens em aberto.
+- Se houver uma ordem em aberto, retornar status HTTP 400 com uma mensagem clara.
+- Não alterar outras rotas ou funcionalidades.
+- Não realizar commit.
+
+# Resultado esperado
+- Veículo sem ordens de serviço: exclusão permitida.
+- Veículo com ordem finalizada: exclusão permitida.
+- Veículo com ordem `aguardando_peca`: exclusão impedida.
+- Quando a exclusão for impedida, retornar status 400 e a mensagem: "Este veículo possui ordens de serviço em aberto e não pode ser excluído".
