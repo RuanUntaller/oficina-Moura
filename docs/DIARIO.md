@@ -12,6 +12,17 @@ Dia	Data	Tarefas concluídas (nº do PLANO)	% antes	% depois	Pedidos	O que a IA 
 6	24	   tarefa 3—CRUD de veículos no frontend 4.1     6.7           2   O Copilot adicionou regras CSS duplicadas no src/index.css, percebi ao revisar o diff e pedi a reorganização.
 7	24     Frontend: Ordens de Serviço           6.7     14.4          3   Nenhum erro identificado
 8	25     Validação das regras e Bloco 5       14.4	 14.8		   1   Nenhum erro identificado
+
+Detalhes do Dia 8 — 25/11/2026
+Implementei e validei a regra que impede excluir veículos com ordens de serviço não finalizadas.
+Testei os 3 cenários no backend:
+Veículo sem ordens: exclusão permitida.
+Veículo com ordem finalizada: exclusão permitida.
+Veículo com ordem aguardando peça: erro 400 e exclusão bloqueada.
+No site público, em guia anônima, validei as funcionalidades do sistema e confirmei que a mensagem de bloqueio aparece corretamente e o veículo permanece cadastrado.
+Decidi congelar o escopo no mínimo obrigatório, sem implementar o bônus de Login.
+
+
 9						
 10						
 Total						
