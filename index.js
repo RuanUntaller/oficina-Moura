@@ -242,6 +242,16 @@ app.delete('/veiculos/:id', async (req, res) => {
       return res.status(404).json({ erro: 'Veículo não encontrado.' });
     }
 
+    const possuiServicoEmAberto = await Servico.exists({
+      veiculo_id: veiculo._id.toString(),
+      status: { $in: ['aberto', 'aguardando_peca'] },
+    });
+    if (possuiServicoEmAberto) {
+      return res.status(400).json({
+        erro: 'Este veículo possui ordens de serviço em aberto e não pode ser excluído',
+      });
+    }
+
     await Veiculo.findByIdAndDelete(req.params.id);
     return res.status(200).json({ mensagem: 'Veículo excluído com sucesso.' });
   } catch (error) {
