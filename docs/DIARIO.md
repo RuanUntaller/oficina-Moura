@@ -1,5 +1,7 @@
 DIÁRIO — Oficina Mecânica
-Aluno:  Sistema: Windows / Linux A cota do Copilot renova em: 30/11
+Aluno: Ruan
+Sistema: Linux 
+A cota do Copilot renova em: 30/11
 
 Copie este arquivo para docs/DIARIO.md no repositório oficina-servidor. Preencha uma linha no fim de cada dia e faça commit. Leva 5 minutos. "% antes" e "% depois" vêm do painel do Copilot no VS Code. "Pedidos" é quantas mensagens você enviou ao Copilot no dia. O teto é 8 por dia.
 
@@ -23,18 +25,27 @@ No site público, em guia anônima, validei as funcionalidades do sistema e conf
 Decidi congelar o escopo no mínimo obrigatório, sem implementar o bônus de Login.
 
 
-9						
-10						
-Total						
+9 26       Testes do sistema e preparação       14.8     14.8          0   Nenhum erro identificado   
+
+
+10 27		Defesa
+
+
+Total
+12 pedidos
+
 Balanço final (preencher no Dia 9)
 Onde gastei mais tempo, e por quê?
+Gastei mais tempo nas primeiras etapas do projeto, porque ainda estava me acostumando com o sistema e precisei de mais tempo para entender e fazer as tarefas.
 
 Qual foi o erro mais sério da IA, e como eu o encontrei?
+O Copilot tentou fazer uma regra que ainda não dava para usar, porque eu não tinha feito a parte das ordens de serviço. Percebi isso quando revisei o código.
 
 O que eu faria diferente se começasse hoje?
+Se começasse hoje, pediria para o Copilot explicar melhor cada parte do código desde o começo.
 
 O que ficou fora, e o que eu faria em seguida?
-
+Faria o login, já que ele ficou de fora.
 
 
 
